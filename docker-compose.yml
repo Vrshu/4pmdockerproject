@@ -1,28 +1,28 @@
 version: '3'
 services:
   movies:
-    image: rahamshaik/moviesservice:latest
+    image: varsha630/a:1
     ports:
       - "80:80"
     deploy:
       replicas: 3
 
   train:
-    image: rahamshaik/trainservice:latest
+    image: varsha630/b:2
     ports:
       - "81:80"
     deploy:
       replicas: 3
 
   dth:
-    image: rahamshaik/dthservice:latest
+    image: varsha630/c:3
     ports:
       - "82:80"
     deploy:
       replicas: 3
 
   recharge:
-    image: rahamshaik/rechargeservice:latest
+    image: varsha630/d:4
     ports:
       - "83:80"
     deploy:
